@@ -89,7 +89,7 @@ function toggleLanguage(){
 }
 
 function downloadCV() {
-    const cvUrl = "http://localhost:3000/download"
+    const cvUrl = "https://raw.githubusercontent.com/medfata/portfolio/97b6f70701104221ece47c16977a504d93e224b3/en-CV.pdf"
     const link = document.createElement('a');
     link.setAttribute('download', 'mohamed-fatta-cv.pdf');
     link.href = cvUrl;
