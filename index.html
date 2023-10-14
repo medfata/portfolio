@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+  <link rel="icon" href="profile_pic.jpg" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <!-- FONT AWESOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title data-translate="title"></title>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="grid">
+      <div class="span-row-3 billy">
+        <div class="col column">
+          <img src="profile_pic.jpg" alt="profile_pic" />
+          <div class="column">
+            <div class="title">
+              <div style="    display: flex;justify-content: space-between;">
+                <h1>Mohamed Fatta</h1>
+                <button class="cv" onclick="downloadCV()">CV</button>
+              </div>
+              <h3 data-translate="profile"></h3>
+            </div>
+            <div class="contact-info">
+              <div class="row">
+                <a href="mailto:medfata3@gmail.com"><i class="fa-solid fa-envelope"></i>medfata3@gmail.com</a>
+              </div>
+              <br />
+              <div class="row">
+                <a href="tel:medfata3@gmail.com"><i class="fa-solid fa-phone"></i>(+212) 638 653 350</a>
+              </div>
+            </div>
+          </div>
+          <div class="description">
+            <h3 data-translate="description">
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- FRONT END CARD -->
+      <div class="front-end column">
+        <h4>FRONT END</h4>
+        <div class="row">
+          <div class="label">
+            <label for="file">HTMX</label>
+          </div>
+          <progress id="file" value="50" max="100">50% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">Angular | RXJS | NGRX</label>
+          </div>
+          <progress id="file" value="90" max="100">90% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">REACT</label>
+          </div>
+          <progress id="file" value="60" max="100">60% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">Typescript</label>
+          </div>
+          <progress id="file" value="75" max="100">75% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">JavaScript</label>
+          </div>
+          <progress id="file" value="80" max="100"> 80% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">CSS</label>
+          </div>
+          <progress id="file" value="70" max="100">70% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">HTML</label>
+          </div>
+          <progress id="file" value="90" max="100">90% </progress>
+        </div>
+      </div>
+
+      <!-- BACKEND CARD -->
+      <div class="back-end column">
+        <h4>Back End</h4>
+        <div class="row">
+          <div class="label">
+            <label for="file">NodeJs</label>
+          </div>
+          <progress id="file" value="90" max="100">90% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">JAVA</label>
+          </div>
+          <progress id="file" value="70" max="100"> 70% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">SPRING BOOT</label>
+          </div>
+          <progress id="file" value="70" max="100"> 70% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">KEYCLOAK | OAUTH</label>
+          </div>
+          <progress id="file" value="70" max="100"> 70% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">Python</label>
+          </div>
+          <progress id="file" value="60" max="100"> 60% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">NOSQL | MONGODB</label>
+          </div>
+          <progress id="file" value="70" max="100"> 70% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">SQL | POSTGRES</label>
+          </div>
+          <progress id="file" value="80" max="100"> 80% </progress>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="span-col-2">
+        <div class="projects">
+          <div class="col">
+            <h3>Experiences (3)</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-col-2">
+        <div class="recipe col">
+          <div class="row">
+            <div class="image">
+              <img src="ntt-data.jpg" alt="" />
+            </div>
+            <div class="info column">
+              <h6 data-translate="exp-3-date"></h6>
+              <h2 data-translate="exp-3-title"></h2>
+              <p data-translate="exp-3-desc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOBBIES -->
+      <div class="span-row-3">
+        <div class="hobbies col column" style="height: auto;">
+          <h2>Hobbies</h2>
+          <img src="gaming.png" />
+          <h5>Gaming</h5>
+          <p>League of Legends</p>
+          <img src="cooking.png" />
+          <h5>Cooking</h5>
+          <img style="max-height: 120px;" src="reading.jpg" />
+          <h5>Reading</h5>
+          <p>Technical / Math / Fiction</p>
+        </div>
+      </div>
+
+
+      <div class="span-col-2">
+        <div class="recipe col">
+          <div class="row">
+            <div class="image">
+              <img src="ziwig.jpg" alt="" />
+            </div>
+            <div class="info column">
+              <h6 data-translate="exp-2-date"></h6>
+              <h2 data-translate="exp-2-title"></h2>
+              <p data-translate="exp-2-desc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-col-2">
+        <div class="recipe col">
+          <div class="row">
+            <div class="image">
+              <img src="wepilot.png" alt="" />
+            </div>
+            <div class="info column">
+              <h6 data-translate="exp-1-date"></h6>
+              <h2 data-translate="exp-1-title"></h2>
+              <p data-translate="exp-1-desc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="grid-column: span 3">
+        <div >
+          <div class="col">
+            <h3>projects (3)</h3>
+          </div>
+        </div>
+      </div>
+      <div style="grid-column: span 3">
+        <div class="project-list" style="box-shadow: -12px 17px 10px rgba(0, 0, 0, 0.2), 12px 17px 10px rgba(0, 0, 0, 0.2);">
+          <div style="z-index: 2;" onclick="prevSlide()" class="arrow left">&lt;</div>
+          <div class="cards">
+            <div class="card">
+              <img src="project-image-uploader.webp" alt="Image-uploader">
+              <h3>Image Uploader</h3>
+              <p>file uploader [fullstack]</p>
+              <button onclick="navigateToProjectCode('https://github.com/medfata/imageUploderFrontEnd')">Code</button>
+            </div>
+            <div class="card">
+              <img src="project-my-unsplush.webp" alt="My-unsplash">
+              <h3>My Unsplash</h3>
+              <p>an image uploader [fullstack]</p>
+              <button onclick="navigateToProjectCode('https://github.com/medfata/myUnsplash')">Code</button>
+            </div>
+            <!-- Repeat similar card structure for other projects -->
+          </div>
+          <div style="z-index: 2;" onclick="nextSlide()" class="arrow right">&gt;</div>
+        </div>
+      </div>
+
+      <!-- FOOTER  -->
+      <footer>
+        <div class="footer-text">
+          <p>
+            created by <a href="">Mohamed Fatta</a>
+          </p>
+        </div>
+      </footer>
+      <div class="language-button" data-translate="tr-button" onclick="toggleLanguage()"></div>
+</body>
+
+</html>
