@@ -59,14 +59,15 @@ let currentIndex = 0;
 let language = "en"
 
 // Function to change the language
-function changeLanguage(language) {
+function changeLanguage(lang) {
     const elements = document.querySelectorAll('[data-translate]');
     elements.forEach(element => {
         const key = element.getAttribute('data-translate');
-        if (translations[language] && translations[language][key]) {
-            element.textContent = translations[language][key];
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
         }
     });
+    language = language  == 'en' ? 'fr' : 'en'
 }
 
 // Function to get the language from the URL path
