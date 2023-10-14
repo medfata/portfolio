@@ -56,6 +56,7 @@ const translations = {
 };
 
 let currentIndex = 0;
+let language = "en"
 
 // Function to change the language
 function changeLanguage(language) {
@@ -79,13 +80,12 @@ function getLanguageFromPath() {
 
 document.addEventListener('DOMContentLoaded', function(){
     // Set the initial language based on the URL path
-    changeLanguage(getLanguageFromPath());
+    changeLanguage(language);
     showSlide(currentIndex)
 })
 
 function toggleLanguage(){
-    console.log("getLanguageFromPath() : ", getLanguageFromPath())
-    changeLanguage(getLanguageFromPath()  === 'en' ? 'fr' : 'en' )
+    changeLanguage(language  == 'en' ? 'fr' : 'en' )
 }
 
 function downloadCV() {
