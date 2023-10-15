@@ -626,6 +626,7 @@ footer a {
 
 /* Default styles for the button */
 .language-button {
+  z-index: 3;
   position: fixed;
   bottom: 20px;
   right: 20px;

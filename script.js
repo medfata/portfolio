@@ -70,15 +70,6 @@ function changeLanguage(lang) {
     language = language  == 'en' ? 'fr' : 'en'
 }
 
-// Function to get the language from the URL path
-function getLanguageFromPath() {
-    const pathSegments = window.location.pathname.split('/');
-    const language = pathSegments[pathSegments.length - 1]; // Assumes language is the first segment in the path
-
-    // Default to English if language is not found or invalid
-    return language === 'fr' ? 'fr' : 'en';
-}
-
 document.addEventListener('DOMContentLoaded', function(){
     // Set the initial language based on the URL path
     changeLanguage(language);
@@ -90,9 +81,11 @@ function toggleLanguage(){
 }
 
 function downloadCV() {
-    const cvUrl = "https://raw.githubusercontent.com/medfata/portfolio/97b6f70701104221ece47c16977a504d93e224b3/en-CV.pdf"
+    const baseUrl = "https://raw.githubusercontent.com/medfata/portfolio/97b6f70701104221ece47c16977a504d93e224b3";
+
+    const cvUrl = baseUrl + (language == 'en' ? "/cv-en.pdf" : "/cv-fr.pdf")
     const link = document.createElement('a');
-    link.setAttribute('download', 'mohamed-fatta-cv.pdf');
+    link.setAttribute('download', `mohamed-fatta-${language}-cv.pdf`);
     link.href = cvUrl;
     document.body.appendChild(link);
     link.click();
