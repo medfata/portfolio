@@ -663,6 +663,7 @@ footer a {
   display: flex;
   overflow: hidden;
   position: relative;
+  padding: 15px;
 }
 
 /* Style for the cards */
