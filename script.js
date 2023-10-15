@@ -67,7 +67,6 @@ function changeLanguage(lang) {
             element.textContent = translations[lang][key];
         }
     });
-    language = language  == 'en' ? 'fr' : 'en'
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -77,11 +76,13 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 function toggleLanguage(){
-    changeLanguage(language  == 'en' ? 'fr' : 'en' )
+    const nextLang =  language  == 'en' ? 'fr' : 'en'
+    changeLanguage(nextLang)
+    language = nextLang
 }
 
 function downloadCV() {
-
+    console.log("language : ",language)
     const cvUrl = window.location.href + (language == 'en' ? "/cv-en.pdf" : "/cv-fr.pdf")
     const link = document.createElement('a');
     link.setAttribute('download', `mohamed-fatta-${language}-cv.pdf`);
