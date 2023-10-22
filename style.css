@@ -294,7 +294,7 @@ progress::-webkit-progress-value {
   max-width: 100%;
 }
 .grid .span-col-2 .recipe .row {
-  align-items: center;
+
 }
 @media (max-width: 900px) {
   .grid .span-col-2 .recipe .row {
@@ -734,4 +734,50 @@ footer a {
 /* Updated Style for the right arrow */
 .arrow.right {
   right: 10px;
+}
+
+.styled-list {
+  list-style: none;
+  padding: 0;
+}
+
+.styled-list li::before {
+  content: "\2022"; /* Unicode character for a bullet (•) */
+  color: #2f80ed;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.styled-list li{
+  font-size: 0.8em;
+  margin-bottom: 5xp;
+}
+.styled-list li span{
+  color: #2f80ed;
+}
+
+.recipe img{
+  margin-top: 10px;
+}
+.horizontal-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.horizontal-list li::before {
+  content: "\2022"; /* Unicode character for a bullet (•) */
+  color: gray;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.horizontal-list li{
+  font-size: 0.8em;
+  color: #2f80ed;
+}
+
+.horizontal-border {
+  width: 50%;
+  height: 1px;
+  background-color: #2f80ed;
+  margin: 10px auto;
+
 }
