@@ -206,9 +206,8 @@ function toggleLanguage(){
 }
 
 function downloadCV() {
-    const baseUrl = "https://raw.githubusercontent.com/medfata/portfolio/97b6f70701104221ece47c16977a504d93e224b3";
-
-    const cvUrl = baseUrl + (language == 'en' ? "/cv-en.pdf" : "/cv-fr.pdf")
+    console.log("language : ",language)
+    const cvUrl = window.location.href + (language == 'en' ? "/cv-en.pdf" : "/cv-fr.pdf")
     const link = document.createElement('a');
     link.setAttribute('download', `mohamed-fatta-${language}-cv.pdf`);
     link.href = cvUrl;
